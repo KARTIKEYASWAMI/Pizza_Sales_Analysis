@@ -3,7 +3,7 @@
 
 <div align="center">
     
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/PizzaPIC.png)
+![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis/blob/main/Images/PizzaPIC.png)
 
 </div>     
 
