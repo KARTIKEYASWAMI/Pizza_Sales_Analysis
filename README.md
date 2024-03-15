@@ -3,7 +3,7 @@
 
 <div align="center">
     
-![image](https://github.com/sharanya-27/pizza_sales_analysis/assets/142989454/9ac41c33-bd49-4c78-8124-4fc5b3c091ec)
+![image](PizzaPIC.png)
 
 </div>     
 
@@ -12,11 +12,11 @@
 
 __Tools used : Excel,MS SQL Server,Power BI__
 
-[Dataset used](https://1drv.ms/x/s!AmKU00K1sOXkiXYGCmYAQfrCOGMJ?e=lz8diP)
+[Dataset used](pizza_sales.csv)
 
 [SQL Analysis-code](sql_analysis.txt) 
 
-[Power BI Dashboard- click to view](https://github.com/sharanya-27/Pizza_Sales_Analysis_SQL/files/14561723/Pizza_Sales_BI_Dashboard.pdf)
+[Power BI Dashboard- click to view](Pizza_Sales_BI_Dashboard.pdf)
 
 [Power BI Dashboard- click to interact](https://app.powerbi.com/view?r=eyJrIjoiMWQzOWNmNDItNzZhYS00MDMxLWI5ZDYtM2FmOWUwMzk3ZWIxIiwidCI6IjZmMTFlMWQzLTEyMTAtNDk5YS1iMjY0LTU2NzA0NTY4OGUyNyJ9)
 
