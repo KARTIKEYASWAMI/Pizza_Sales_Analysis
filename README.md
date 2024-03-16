@@ -56,7 +56,7 @@ orders over a specific period, reflecting the revenue potential of the business.
     
         SELECT (SUM(total_price) / COUNT(DISTINCT order_id)) AS Avg_order_Value FROM pizza_sales
     
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Avg_order.png)
+![image](Images/Avg_order.png)
 
 Average order value helps in understanding customer spending habits and the effectiveness of marketing strategies. A higher average order value indicates that 
 customers are spending more per transaction, which can contribute to increased revenue and profitability.
@@ -65,7 +65,7 @@ customers are spending more per transaction, which can contribute to increased r
     
         SELECT SUM(quantity) AS Total_pizza_sold FROM pizza_sales
      
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/total_pizza.png)
+![image](Images/total_pizza.png)
     
 Total pizzas sold is a fundamental metric that directly reflects product demand. It provides insights into consumption patterns and helps in inventory management and production planning. Understanding total pizzas sold enables businesses to meet customer demand efficiently.
     
@@ -73,7 +73,7 @@ Total pizzas sold is a fundamental metric that directly reflects product demand.
     
         SELECT COUNT(DISTINCT order_id) AS Total_Orders FROM pizza_sales
      
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Total_Orders.png)
+![image](Images/Total_Orders.png)
 
 Total orders represent the volume of transactions processed within a specific period. Tracking total orders helps in evaluating sales performance and 
 identifying trends in customer behavior. It provides a basis for assessing business growth and operational efficiency.
@@ -85,7 +85,7 @@ identifying trends in customer behavior. It provides a basis for assessing busin
         AS Avg_Pizzas_per_order
         FROM pizza_sales
         
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/AvgPizza_perOrder.png)
+![image](Images/AvgPizza_perOrder.png)
 
 Average pizzas per order indicates the average quantity of pizzas purchased in each transaction. This metric offers insights into customer preferences and 
 ordering behavior. Higher average pizzas per order may indicate upselling opportunities or popular menu items.
@@ -96,7 +96,7 @@ __2) Daily Trend for Total Orders__
         FROM pizza_sales
         GROUP BY DATENAME(DW, order_date)
         
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/table.png)
+![image](Images/table.png)
 
 By analyzing the daily trend of total orders over a specific time period, we can identify patterns and fluctuations in order volumes on a daily basis. This 
 helps in understanding the demand patterns throughout the week or month, enabling better inventory management and resource allocation.
@@ -107,7 +107,7 @@ helps in understanding the demand patterns throughout the week or month, enablin
         from pizza_sales
         GROUP BY DATENAME(MONTH, order_date)
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Table2.png)
+![image](Images/Table2.png)
 
 The monthly trend of total orders offers insights into the overall order activity throughout the month. Identifying peak periods of high order activity can aid in resource allocation, production planning, and promotional efforts. By recognizing monthly trends, businesses can adjust their operations to capitalize on high-demand periods and optimize efficiency during slower periods.
 
@@ -118,7 +118,7 @@ __4) % of Sales by Pizza Category__
         FROM pizza_sales
         GROUP BY pizza_category
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Table3.png)
+![image](Images/Table3.png)
 
 The distribution of sales across different pizza categories helps in understanding the popularity of each category and its contribution to overall sales. This 
 insight informs menu optimization strategies, marketing campaigns, and inventory management decisions to maximize revenue and customer satisfaction.
@@ -131,7 +131,7 @@ insight informs menu optimization strategies, marketing campaigns, and inventory
         GROUP BY pizza_size
         ORDER BY pizza_size
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Table4.png)
+![image](Images/Table4.png)
 
 The chart depicting the percentage of sales attributed to different pizza sizes provides insights into customer preferences regarding pizza size. 
 Understanding these preferences allows for better inventory management and menu optimization to meet customer demand effectively.
@@ -144,7 +144,7 @@ __6) Total Pizzas Sold by Pizza Category__
         GROUP BY pizza_category
         ORDER BY Total_Quantity_Sold DESC
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Table5.png)
+![image](Images/Table5.png)
 
 The metric showing total number of pizzas sold for each pizza category enables comparison of sales performance across different categories. This 
 visualization helps in identifying popular and less popular pizza options, informing marketing strategies and menu adjustments accordingly.
@@ -156,7 +156,7 @@ __7) Top 5 Pizzas by Revenue__
         GROUP BY pizza_name
         ORDER BY Total_Revenue DESC
         
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Table6.png)
+![image](Images/Table6.png)
 
 The chart highlighting the top 5 best-selling pizzas based on revenue, total quantity, and total orders identifies the most popular pizza options. This 
 insight aids in understanding customer preferences and allows for targeted promotions or menu enhancements to capitalize on high-demand items.
@@ -168,7 +168,7 @@ insight aids in understanding customer preferences and allows for targeted promo
         GROUP BY pizza_name
         ORDER BY Total_Revenue ASC
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/T7.png)
+![image](Images/T7.png)
 
 Conversely, the chart showcasing the bottom 5 worst-selling pizzas based on revenue, total quantity, and total orders helps identify underperforming or less 
 popular pizza options. This information is valuable for making strategic decisions such as discontinuing unpopular items or adjusting pricing and marketing 
@@ -181,7 +181,7 @@ __9) Top 5 Pizzas by Quantity__
         GROUP BY pizza_name
         ORDER BY Total_Pizza_Sold DESC
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/T8.png)
+![image](Images/T8.png)
 
 Identifying the top 5 pizzas by quantity sold provides insight into the most popular pizza varieties among customers. This information helps in understanding 
 customer preferences and allows for targeted marketing efforts or menu optimizations to capitalize on high-demand items.
@@ -193,7 +193,7 @@ __10) Bottom 5 Pizzas by Quantity__
         GROUP BY pizza_name
         ORDER BY Total_Pizza_Sold ASC
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/T9.png)
+![image](Images/T9.png)
 
 Conversely, identifying the bottom 5 pizzas by quantity sold highlights less popular or underperforming pizza options. This insight can inform menu 
 adjustments, promotional strategies, or inventory management decisions to minimize waste and maximize profitability.
@@ -205,7 +205,7 @@ __11) Top 5 Pizzas by Total Orders__
         GROUP BY pizza_name
         ORDER BY Total_Orders DESC
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/T10.png)
+![image](Images/T10.png)
 
 Identifying the top 5 pizzas by total orders sheds light on the most frequently ordered pizza varieties. This information helps in understanding customer 
 behavior and preferences, enabling businesses to tailor marketing campaigns and menu offerings to meet customer demand effectively.
@@ -217,14 +217,14 @@ behavior and preferences, enabling businesses to tailor marketing campaigns and 
         GROUP BY pizza_name
         ORDER BY Total_Orders ASC
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/T11.png)
+![image](Images/T11.png)
 
 Identifying the bottom 5 pizzas by total orders reveals less popular or niche pizza options that may require attention or adjustments. Understanding these trends allows businesses to make informed decisions regarding menu adjustments, promotional strategies, or inventory management to optimize sales and customer satisfaction.
 
 __13) Generated various Charts and Visuals on Power BI and Excel to identify trends/patterns and gain more insights into the data.__
 
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/BI_Dashboard.png)
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/Excel_Dashboard.png)
+![image](Images/BI_Dashboard.png)
+![image](Images/Excel_Dashboard.png)
 
 
 
