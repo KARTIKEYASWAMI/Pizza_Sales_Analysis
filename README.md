@@ -47,7 +47,7 @@ __1) What are the Key Performance Indicators obtained from the Dataset?__
   
       SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
    
-![image](https://github.com/KARTIKEYASWAMI/Pizza_Sales_Analysis_Data/blob/main/TotalRevenue.png)
+![image](Images/TotalRevenue.png)
 
 This metric provides a clear measure of the overall financial performance of the pizza sales. It indicates the total amount of money generated from pizza 
 orders over a specific period, reflecting the revenue potential of the business.
